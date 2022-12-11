@@ -4,10 +4,34 @@
     --accent-color: #c7643a;
 }
 
+/* Font styles */
+
+@font-face {
+    font-family: 'CinetypeLight';
+    src: url(../fonts/GT-Cinetype-Light-Trial.otf);
+}
+
+@font-face {
+    font-family: 'CinetypeRegular';
+    src: url(../fonts/GT-Cinetype-Regular-Trial.otf);
+}
+
+@font-face {
+    font-family: 'SuperDisplayLight';
+    src: url(../fonts/GT-Super-Display-Light-Trial.otf);
+}
+
+@font-face {
+    font-family: 'SuperDisplayRegular';
+    src: url(../fonts/GT-Super-Display-Regular-Trial.otf);
+}
+
 .navbar-nav .nav-link,
 .navbar-nav .nav-link:link,
-.navbar-nav .nav-link:visited  {
+.navbar-nav .nav-link:visited, .btn  {
+    text-decoration: none;
     color: var(--neutral-dark);
+    font-family: CinetypeLight;
 }
 
 .navbar-nav .nav-item .nav-link:active,
@@ -15,10 +39,60 @@
     color: var(--accent-color);
 }
 
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+.navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;   
+    height: 2px;
+    margin: 3px;
+    background: #C7643A;
+    transition: width .4s;
+}
+
+.navbar-nav .nav-link:hover {
+    font-family: CinetypeRegular;
+    color: #C7643A;
+}
+
+.card {
+    transition: .3s ease-in-out;
+}
+
+.card:hover{
+    color: var(--neutral-light);
+    opacity: 0.3;
+}
+
+
 .btn {
     background-color: var(--accent-color);
 }
 
 .strike {
     text-decoration: line-through;
+}
+
+h1, h2 {
+    font-family: SuperDisplayRegular;
+}
+
+h3, p, label, .btn {
+    font-family: CinetypeLight;
+}
+
+.btn {
+    color: #fff;
+}
+
+.back-to-top {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.welcome-banner, .about-section, #projects, #contact, footer {
+    padding: 5rem;
 }
