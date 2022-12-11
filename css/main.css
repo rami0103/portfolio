@@ -3,3 +3,22 @@
     --neutral-dark: #2B2B2B;
     --accent-color: #c7643a;
 }
+
+.navbar-nav .nav-link,
+.navbar-nav .nav-link:link,
+.navbar-nav .nav-link:visited  {
+    color: var(--neutral-dark);
+}
+
+.navbar-nav .nav-item .nav-link:active,
+.navbar-nav .nav-item .nav-link:focus {
+    color: var(--accent-color);
+}
+
+.btn {
+    background-color: var(--accent-color);
+}
+
+.strike {
+    text-decoration: line-through;
+}
