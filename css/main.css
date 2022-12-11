@@ -96,3 +96,20 @@ h3, p, label, .btn {
 .welcome-banner, .about-section, #projects, #contact, footer {
     padding: 5rem;
 }
+
+.about-paragraph {
+    margin-top: 2rem;
+    line-height: 3rem;
+}
+
+.display-4 {
+    margin-bottom: 2rem;
+}
+
+#contact h3, #contact p {
+    padding-bottom: 2rem;
+}
+
+footer p {
+    padding-bottom: 1rem;
+}
